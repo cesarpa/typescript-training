@@ -62,6 +62,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "angular-ecommerce:build",
+            "host": "0.0.0.0"
+          },
           "configurations": {
             "production": {
               "browserTarget": "angular-ecommerce:build:production"
