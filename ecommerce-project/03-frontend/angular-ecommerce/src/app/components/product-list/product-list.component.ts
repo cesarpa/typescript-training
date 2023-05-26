@@ -13,7 +13,8 @@ export class ProductListComponent implements OnInit {
   products: Product[] = [];
   currentCategoryId: number = 1;
 
-  constructor(private productService: ProductService, private route:ActivatedRoute) { }
+  constructor(private productService: ProductService,
+     private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(() => {
